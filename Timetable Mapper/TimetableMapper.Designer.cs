@@ -397,6 +397,7 @@
             this.btnMoreOptions.Size = new System.Drawing.Size(146, 47);
             this.btnMoreOptions.TabIndex = 51;
             this.btnMoreOptions.Text = "MoreOptions";
+            this.btnMoreOptions.UseCompatibleTextRendering = true;
             this.btnMoreOptions.UseVisualStyleBackColor = false;
             this.btnMoreOptions.Click += new System.EventHandler(this.btnMoreOptions_Click_1);
             // 
