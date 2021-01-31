@@ -55,9 +55,6 @@
     <Compile Include="MoreOptions.Designer.cs">
       <DependentUpon>MoreOptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoverButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Timetable.cs">
       <SubType>Form</SubType>
     </Compile>

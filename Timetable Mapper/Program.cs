@@ -16,8 +16,7 @@ namespace Timetable_Mapper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            TimetableMapper timetablemapper = new TimetableMapper();
-            Application.Run(timetablemapper);
+            Application.Run(new TimetableMapper());
         }
     }
 }

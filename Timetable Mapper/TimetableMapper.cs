@@ -159,7 +159,7 @@ namespace Timetable_Mapper
             btnLineSix.Font = new Font(pfc.Families[0], 8);
 
             btnMap.Font = new Font(pfc.Families[0], 17);
-            btnMoreOptions.Font = new Font(pfc.Families[0], 13);
+            //btnMoreOptions.Font = new Font(pfc.Families[0], 13);
             btnRandomiseColours.Font = new Font(pfc.Families[0], 13);
             btnHelp.Font = new Font(pfc.Families[0], 8);
             lblInfo.Font = new Font(pfc.Families[0], 20);
@@ -220,13 +220,6 @@ namespace Timetable_Mapper
             {
                 btnLineSix.BackColor = clrdLineSix.Color;
             }
-        }
-
-        private void btnMoreOptions_Click(object sender, EventArgs e)
-        {
-            MoreOptions moreoptions = new MoreOptions();
-            moreoptions.SetParentForm(this);
-            moreoptions.Show();
         }
 
         private void btnRandomiseColours_Click(object sender, EventArgs e)
@@ -346,5 +339,11 @@ namespace Timetable_Mapper
             }
         }
 
+        private void btnMoreOptions_Click_1(object sender, EventArgs e)
+        {
+            MoreOptions moreoptions = new MoreOptions();
+            moreoptions.SetParentForm(this);
+            moreoptions.Show();
+        }
     }
 }

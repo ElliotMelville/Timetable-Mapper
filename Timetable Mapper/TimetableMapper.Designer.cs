@@ -62,12 +62,12 @@
             this.txtLineFourNote = new System.Windows.Forms.TextBox();
             this.txtLineFiveNote = new System.Windows.Forms.TextBox();
             this.txtLineSixNote = new System.Windows.Forms.TextBox();
-            this.btnMoreOptions = new System.Windows.Forms.Button();
             this.btnRandomiseColours = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.lblInfo = new System.Windows.Forms.Label();
             this.picTitle = new System.Windows.Forms.PictureBox();
             this.picForm = new System.Windows.Forms.PictureBox();
+            this.btnMoreOptions = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picForm)).BeginInit();
             this.SuspendLayout();
@@ -331,19 +331,6 @@
             this.txtLineSixNote.Size = new System.Drawing.Size(146, 20);
             this.txtLineSixNote.TabIndex = 46;
             // 
-            // btnMoreOptions
-            // 
-            this.btnMoreOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoreOptions.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoreOptions.Location = new System.Drawing.Point(604, 627);
-            this.btnMoreOptions.Name = "btnMoreOptions";
-            this.btnMoreOptions.Size = new System.Drawing.Size(146, 47);
-            this.btnMoreOptions.TabIndex = 47;
-            this.btnMoreOptions.Text = "Unavailable";
-            this.btnMoreOptions.UseCompatibleTextRendering = true;
-            this.btnMoreOptions.UseVisualStyleBackColor = true;
-            this.btnMoreOptions.Click += new System.EventHandler(this.btnMoreOptions_Click);
-            // 
             // btnRandomiseColours
             // 
             this.btnRandomiseColours.BackColor = System.Drawing.SystemColors.Window;
@@ -401,15 +388,27 @@
             this.picForm.TabIndex = 0;
             this.picForm.TabStop = false;
             // 
+            // btnMoreOptions
+            // 
+            this.btnMoreOptions.BackColor = System.Drawing.Color.White;
+            this.btnMoreOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMoreOptions.Location = new System.Drawing.Point(604, 627);
+            this.btnMoreOptions.Name = "btnMoreOptions";
+            this.btnMoreOptions.Size = new System.Drawing.Size(146, 47);
+            this.btnMoreOptions.TabIndex = 51;
+            this.btnMoreOptions.Text = "MoreOptions";
+            this.btnMoreOptions.UseVisualStyleBackColor = false;
+            this.btnMoreOptions.Click += new System.EventHandler(this.btnMoreOptions_Click_1);
+            // 
             // TimetableMapper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 700);
+            this.Controls.Add(this.btnMoreOptions);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnRandomiseColours);
-            this.Controls.Add(this.btnMoreOptions);
             this.Controls.Add(this.picTitle);
             this.Controls.Add(this.txtLineSixNote);
             this.Controls.Add(this.txtLineFiveNote);
@@ -483,10 +482,10 @@
         private System.Windows.Forms.TextBox txtLineFourNote;
         private System.Windows.Forms.TextBox txtLineFiveNote;
         private System.Windows.Forms.TextBox txtLineSixNote;
-        private System.Windows.Forms.Button btnMoreOptions;
         private System.Windows.Forms.Button btnRandomiseColours;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Button btnMoreOptions;
     }
 }
 
