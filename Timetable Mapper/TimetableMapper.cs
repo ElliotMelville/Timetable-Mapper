@@ -159,7 +159,7 @@ namespace Timetable_Mapper
             btnLineSix.Font = new Font(pfc.Families[0], 8);
 
             btnMap.Font = new Font(pfc.Families[0], 17);
-            //btnMoreOptions.Font = new Font(pfc.Families[0], 13);
+            btnMoreOptions.Font = new Font(pfc.Families[0], 13);
             btnRandomiseColours.Font = new Font(pfc.Families[0], 13);
             btnHelp.Font = new Font(pfc.Families[0], 8);
             lblInfo.Font = new Font(pfc.Families[0], 20);
