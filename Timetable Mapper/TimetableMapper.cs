@@ -151,6 +151,8 @@ namespace Timetable_Mapper
             // pass the font to the font collection
             pfc.AddMemoryFont(data, fontLength);
 
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(data);
+
             btnLineOne.Font = new Font(pfc.Families[0], 8);
             btnLineTwo.Font = new Font(pfc.Families[0], 8);
             btnLineThree.Font = new Font(pfc.Families[0], 8);

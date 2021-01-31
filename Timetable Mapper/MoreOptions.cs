@@ -52,6 +52,8 @@ namespace Timetable_Mapper
             // pass the font to the font collection
             pfc.AddMemoryFont(data, fontLength);
 
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(data);
+
             lblFont.Font = new Font(pfc.Families[0], 10);
             lblColourPresets.Font = new Font(pfc.Families[0], 10);
             chkBlackAndWhite.Font = new Font(pfc.Families[0], 10);
