@@ -132,6 +132,7 @@ namespace Timetable_Mapper
         //custom font
         private void InitialiseCustomFonts()
         {
+
             //Create your private font collection object.
             PrivateFontCollection pfc = new PrivateFontCollection();
 
@@ -344,5 +345,6 @@ namespace Timetable_Mapper
                 btnLineOne.Enabled = false;
             }
         }
+
     }
 }

@@ -129,6 +129,7 @@
             this.btnMap.Size = new System.Drawing.Size(234, 66);
             this.btnMap.TabIndex = 21;
             this.btnMap.Text = "MAP TIMETABLE";
+            this.btnMap.UseCompatibleTextRendering = true;
             this.btnMap.UseVisualStyleBackColor = true;
             this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
             // 
@@ -147,6 +148,7 @@
             this.btnLineOne.Size = new System.Drawing.Size(92, 23);
             this.btnLineOne.TabIndex = 29;
             this.btnLineOne.Text = "Colour";
+            this.btnLineOne.UseCompatibleTextRendering = true;
             this.btnLineOne.UseVisualStyleBackColor = false;
             this.btnLineOne.Click += new System.EventHandler(this.btnLineOne_Click);
             // 
@@ -159,6 +161,7 @@
             this.btnLineTwo.Size = new System.Drawing.Size(92, 23);
             this.btnLineTwo.TabIndex = 30;
             this.btnLineTwo.Text = "Colour";
+            this.btnLineTwo.UseCompatibleTextRendering = true;
             this.btnLineTwo.UseVisualStyleBackColor = false;
             this.btnLineTwo.Click += new System.EventHandler(this.btnLineTwo_Click);
             // 
@@ -171,6 +174,7 @@
             this.btnLineThree.Size = new System.Drawing.Size(92, 23);
             this.btnLineThree.TabIndex = 31;
             this.btnLineThree.Text = "Colour";
+            this.btnLineThree.UseCompatibleTextRendering = true;
             this.btnLineThree.UseVisualStyleBackColor = false;
             this.btnLineThree.Click += new System.EventHandler(this.btnLineThree_Click);
             // 
@@ -183,6 +187,7 @@
             this.btnLineFour.Size = new System.Drawing.Size(91, 23);
             this.btnLineFour.TabIndex = 32;
             this.btnLineFour.Text = "Colour";
+            this.btnLineFour.UseCompatibleTextRendering = true;
             this.btnLineFour.UseVisualStyleBackColor = false;
             this.btnLineFour.Click += new System.EventHandler(this.btnLineFour_Click);
             // 
@@ -195,6 +200,7 @@
             this.btnLineFive.Size = new System.Drawing.Size(92, 23);
             this.btnLineFive.TabIndex = 33;
             this.btnLineFive.Text = "Colour";
+            this.btnLineFive.UseCompatibleTextRendering = true;
             this.btnLineFive.UseVisualStyleBackColor = false;
             this.btnLineFive.Click += new System.EventHandler(this.btnLineFive_Click);
             // 
@@ -207,6 +213,7 @@
             this.btnLineSix.Size = new System.Drawing.Size(92, 23);
             this.btnLineSix.TabIndex = 34;
             this.btnLineSix.Text = "Colour";
+            this.btnLineSix.UseCompatibleTextRendering = true;
             this.btnLineSix.UseVisualStyleBackColor = false;
             this.btnLineSix.Click += new System.EventHandler(this.btnLineSix_Click);
             // 
@@ -219,6 +226,7 @@
             this.lblLineOne.TabIndex = 35;
             this.lblLineOne.Text = "LINE ONE";
             this.lblLineOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLineOne.UseCompatibleTextRendering = true;
             // 
             // lblLineTwo
             // 
@@ -229,6 +237,7 @@
             this.lblLineTwo.TabIndex = 36;
             this.lblLineTwo.Text = "LINE TWO";
             this.lblLineTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLineTwo.UseCompatibleTextRendering = true;
             // 
             // lblLineThree
             // 
@@ -239,6 +248,7 @@
             this.lblLineThree.TabIndex = 37;
             this.lblLineThree.Text = "LINE THREE";
             this.lblLineThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLineThree.UseCompatibleTextRendering = true;
             // 
             // lblLineFive
             // 
@@ -249,6 +259,7 @@
             this.lblLineFive.TabIndex = 38;
             this.lblLineFive.Text = "LINE FIVE";
             this.lblLineFive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLineFive.UseCompatibleTextRendering = true;
             // 
             // lblLineSix
             // 
@@ -259,6 +270,7 @@
             this.lblLineSix.TabIndex = 39;
             this.lblLineSix.Text = "LINE SIX";
             this.lblLineSix.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLineSix.UseCompatibleTextRendering = true;
             // 
             // lblLineFour
             // 
@@ -269,6 +281,7 @@
             this.lblLineFour.TabIndex = 40;
             this.lblLineFour.Text = "LINE FOUR";
             this.lblLineFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLineFour.UseCompatibleTextRendering = true;
             // 
             // txtLineOneNote
             // 
@@ -327,6 +340,7 @@
             this.btnMoreOptions.Size = new System.Drawing.Size(146, 47);
             this.btnMoreOptions.TabIndex = 47;
             this.btnMoreOptions.Text = "Unavailable";
+            this.btnMoreOptions.UseCompatibleTextRendering = true;
             this.btnMoreOptions.UseVisualStyleBackColor = true;
             this.btnMoreOptions.Click += new System.EventHandler(this.btnMoreOptions_Click);
             // 
@@ -339,6 +353,7 @@
             this.btnRandomiseColours.Size = new System.Drawing.Size(146, 47);
             this.btnRandomiseColours.TabIndex = 48;
             this.btnRandomiseColours.Text = "Randomise Colours";
+            this.btnRandomiseColours.UseCompatibleTextRendering = true;
             this.btnRandomiseColours.UseVisualStyleBackColor = false;
             this.btnRandomiseColours.Click += new System.EventHandler(this.btnRandomiseColours_Click);
             // 
@@ -354,6 +369,7 @@
             this.btnHelp.Size = new System.Drawing.Size(20, 20);
             this.btnHelp.TabIndex = 49;
             this.btnHelp.Text = "?";
+            this.btnHelp.UseCompatibleTextRendering = true;
             this.btnHelp.UseVisualStyleBackColor = false;
             // 
             // lblInfo
@@ -364,6 +380,7 @@
             this.lblInfo.TabIndex = 50;
             this.lblInfo.Text = "Now with customisable notes!";
             this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInfo.UseCompatibleTextRendering = true;
             // 
             // picTitle
             // 

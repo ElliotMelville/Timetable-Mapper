@@ -68,6 +68,7 @@
             this.lblFont.TabIndex = 2;
             this.lblFont.Text = "Font";
             this.lblFont.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFont.UseCompatibleTextRendering = true;
             // 
             // lblColourPresets
             // 
@@ -79,6 +80,7 @@
             this.lblColourPresets.TabIndex = 4;
             this.lblColourPresets.Text = "Colour Presets";
             this.lblColourPresets.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblColourPresets.UseCompatibleTextRendering = true;
             // 
             // button4
             // 
@@ -145,9 +147,10 @@
             this.chkBlackAndWhite.BackColor = System.Drawing.Color.Transparent;
             this.chkBlackAndWhite.Location = new System.Drawing.Point(12, 276);
             this.chkBlackAndWhite.Name = "chkBlackAndWhite";
-            this.chkBlackAndWhite.Size = new System.Drawing.Size(90, 17);
+            this.chkBlackAndWhite.Size = new System.Drawing.Size(90, 18);
             this.chkBlackAndWhite.TabIndex = 9;
             this.chkBlackAndWhite.Text = "Black + white";
+            this.chkBlackAndWhite.UseCompatibleTextRendering = true;
             this.chkBlackAndWhite.UseVisualStyleBackColor = false;
             this.chkBlackAndWhite.CheckedChanged += new System.EventHandler(this.chkBlackAndWhite_CheckedChanged);
             // 
@@ -160,6 +163,7 @@
             this.btnSave.Size = new System.Drawing.Size(105, 50);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save changes";
+            this.btnSave.UseCompatibleTextRendering = true;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
