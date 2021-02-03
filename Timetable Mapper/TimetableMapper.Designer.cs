@@ -30,13 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimetableMapper));
-            this.txtLineOne = new System.Windows.Forms.TextBox();
             this.clrdLineOne = new System.Windows.Forms.ColorDialog();
-            this.txtLineTwo = new System.Windows.Forms.TextBox();
-            this.txtLineThree = new System.Windows.Forms.TextBox();
-            this.txtLineFour = new System.Windows.Forms.TextBox();
-            this.txtLineFive = new System.Windows.Forms.TextBox();
-            this.txtLineSix = new System.Windows.Forms.TextBox();
             this.clrdLineTwo = new System.Windows.Forms.ColorDialog();
             this.clrdLineThree = new System.Windows.Forms.ColorDialog();
             this.clrdLineFour = new System.Windows.Forms.ColorDialog();
@@ -56,69 +50,27 @@
             this.lblLineFive = new System.Windows.Forms.Label();
             this.lblLineSix = new System.Windows.Forms.Label();
             this.lblLineFour = new System.Windows.Forms.Label();
-            this.txtLineOneNote = new System.Windows.Forms.TextBox();
-            this.txtLineTwoNote = new System.Windows.Forms.TextBox();
-            this.txtLineThreeNote = new System.Windows.Forms.TextBox();
-            this.txtLineFourNote = new System.Windows.Forms.TextBox();
-            this.txtLineFiveNote = new System.Windows.Forms.TextBox();
-            this.txtLineSixNote = new System.Windows.Forms.TextBox();
             this.btnRandomiseColours = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.lblInfo = new System.Windows.Forms.Label();
             this.picTitle = new System.Windows.Forms.PictureBox();
             this.picForm = new System.Windows.Forms.PictureBox();
             this.btnMoreOptions = new System.Windows.Forms.Button();
+            this.txtLineOne = new Timetable_Mapper.GhostTextBox();
+            this.txtLineOneNote = new Timetable_Mapper.GhostTextBox();
+            this.txtLineTwo = new Timetable_Mapper.GhostTextBox();
+            this.txtLineTwoNote = new Timetable_Mapper.GhostTextBox();
+            this.txtLineThree = new Timetable_Mapper.GhostTextBox();
+            this.txtLineThreeNote = new Timetable_Mapper.GhostTextBox();
+            this.txtLineFour = new Timetable_Mapper.GhostTextBox();
+            this.txtLineFourNote = new Timetable_Mapper.GhostTextBox();
+            this.txtLineFive = new Timetable_Mapper.GhostTextBox();
+            this.txtLineFiveNote = new Timetable_Mapper.GhostTextBox();
+            this.txtLineSix = new Timetable_Mapper.GhostTextBox();
+            this.txtLineSixNote = new Timetable_Mapper.GhostTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picForm)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtLineOne
-            // 
-            this.txtLineOne.Location = new System.Drawing.Point(86, 347);
-            this.txtLineOne.MaxLength = 15;
-            this.txtLineOne.Name = "txtLineOne";
-            this.txtLineOne.Size = new System.Drawing.Size(92, 20);
-            this.txtLineOne.TabIndex = 4;
-            // 
-            // txtLineTwo
-            // 
-            this.txtLineTwo.Location = new System.Drawing.Point(359, 347);
-            this.txtLineTwo.MaxLength = 15;
-            this.txtLineTwo.Name = "txtLineTwo";
-            this.txtLineTwo.Size = new System.Drawing.Size(92, 20);
-            this.txtLineTwo.TabIndex = 7;
-            // 
-            // txtLineThree
-            // 
-            this.txtLineThree.Location = new System.Drawing.Point(632, 347);
-            this.txtLineThree.MaxLength = 15;
-            this.txtLineThree.Name = "txtLineThree";
-            this.txtLineThree.Size = new System.Drawing.Size(92, 20);
-            this.txtLineThree.TabIndex = 10;
-            // 
-            // txtLineFour
-            // 
-            this.txtLineFour.Location = new System.Drawing.Point(87, 497);
-            this.txtLineFour.MaxLength = 15;
-            this.txtLineFour.Name = "txtLineFour";
-            this.txtLineFour.Size = new System.Drawing.Size(92, 20);
-            this.txtLineFour.TabIndex = 13;
-            // 
-            // txtLineFive
-            // 
-            this.txtLineFive.Location = new System.Drawing.Point(358, 497);
-            this.txtLineFive.MaxLength = 15;
-            this.txtLineFive.Name = "txtLineFive";
-            this.txtLineFive.Size = new System.Drawing.Size(92, 20);
-            this.txtLineFive.TabIndex = 16;
-            // 
-            // txtLineSix
-            // 
-            this.txtLineSix.Location = new System.Drawing.Point(632, 497);
-            this.txtLineSix.MaxLength = 15;
-            this.txtLineSix.Name = "txtLineSix";
-            this.txtLineSix.Size = new System.Drawing.Size(92, 20);
-            this.txtLineSix.TabIndex = 19;
             // 
             // btnMap
             // 
@@ -127,7 +79,7 @@
             this.btnMap.Location = new System.Drawing.Point(283, 618);
             this.btnMap.Name = "btnMap";
             this.btnMap.Size = new System.Drawing.Size(234, 66);
-            this.btnMap.TabIndex = 21;
+            this.btnMap.TabIndex = 19;
             this.btnMap.Text = "MAP TIMETABLE";
             this.btnMap.UseCompatibleTextRendering = true;
             this.btnMap.UseVisualStyleBackColor = true;
@@ -146,7 +98,7 @@
             this.btnLineOne.Location = new System.Drawing.Point(86, 403);
             this.btnLineOne.Name = "btnLineOne";
             this.btnLineOne.Size = new System.Drawing.Size(92, 23);
-            this.btnLineOne.TabIndex = 29;
+            this.btnLineOne.TabIndex = 12;
             this.btnLineOne.Text = "Colour";
             this.btnLineOne.UseCompatibleTextRendering = true;
             this.btnLineOne.UseVisualStyleBackColor = false;
@@ -159,7 +111,7 @@
             this.btnLineTwo.Location = new System.Drawing.Point(359, 403);
             this.btnLineTwo.Name = "btnLineTwo";
             this.btnLineTwo.Size = new System.Drawing.Size(92, 23);
-            this.btnLineTwo.TabIndex = 30;
+            this.btnLineTwo.TabIndex = 13;
             this.btnLineTwo.Text = "Colour";
             this.btnLineTwo.UseCompatibleTextRendering = true;
             this.btnLineTwo.UseVisualStyleBackColor = false;
@@ -172,7 +124,7 @@
             this.btnLineThree.Location = new System.Drawing.Point(632, 403);
             this.btnLineThree.Name = "btnLineThree";
             this.btnLineThree.Size = new System.Drawing.Size(92, 23);
-            this.btnLineThree.TabIndex = 31;
+            this.btnLineThree.TabIndex = 14;
             this.btnLineThree.Text = "Colour";
             this.btnLineThree.UseCompatibleTextRendering = true;
             this.btnLineThree.UseVisualStyleBackColor = false;
@@ -185,7 +137,7 @@
             this.btnLineFour.Location = new System.Drawing.Point(87, 554);
             this.btnLineFour.Name = "btnLineFour";
             this.btnLineFour.Size = new System.Drawing.Size(91, 23);
-            this.btnLineFour.TabIndex = 32;
+            this.btnLineFour.TabIndex = 15;
             this.btnLineFour.Text = "Colour";
             this.btnLineFour.UseCompatibleTextRendering = true;
             this.btnLineFour.UseVisualStyleBackColor = false;
@@ -198,7 +150,7 @@
             this.btnLineFive.Location = new System.Drawing.Point(359, 554);
             this.btnLineFive.Name = "btnLineFive";
             this.btnLineFive.Size = new System.Drawing.Size(92, 23);
-            this.btnLineFive.TabIndex = 33;
+            this.btnLineFive.TabIndex = 16;
             this.btnLineFive.Text = "Colour";
             this.btnLineFive.UseCompatibleTextRendering = true;
             this.btnLineFive.UseVisualStyleBackColor = false;
@@ -211,7 +163,7 @@
             this.btnLineSix.Location = new System.Drawing.Point(632, 554);
             this.btnLineSix.Name = "btnLineSix";
             this.btnLineSix.Size = new System.Drawing.Size(92, 23);
-            this.btnLineSix.TabIndex = 34;
+            this.btnLineSix.TabIndex = 17;
             this.btnLineSix.Text = "Colour";
             this.btnLineSix.UseCompatibleTextRendering = true;
             this.btnLineSix.UseVisualStyleBackColor = false;
@@ -283,54 +235,6 @@
             this.lblLineFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblLineFour.UseCompatibleTextRendering = true;
             // 
-            // txtLineOneNote
-            // 
-            this.txtLineOneNote.Location = new System.Drawing.Point(59, 376);
-            this.txtLineOneNote.MaxLength = 17;
-            this.txtLineOneNote.Name = "txtLineOneNote";
-            this.txtLineOneNote.Size = new System.Drawing.Size(146, 20);
-            this.txtLineOneNote.TabIndex = 41;
-            // 
-            // txtLineTwoNote
-            // 
-            this.txtLineTwoNote.Location = new System.Drawing.Point(331, 376);
-            this.txtLineTwoNote.MaxLength = 17;
-            this.txtLineTwoNote.Name = "txtLineTwoNote";
-            this.txtLineTwoNote.Size = new System.Drawing.Size(146, 20);
-            this.txtLineTwoNote.TabIndex = 42;
-            // 
-            // txtLineThreeNote
-            // 
-            this.txtLineThreeNote.Location = new System.Drawing.Point(604, 376);
-            this.txtLineThreeNote.MaxLength = 17;
-            this.txtLineThreeNote.Name = "txtLineThreeNote";
-            this.txtLineThreeNote.Size = new System.Drawing.Size(146, 20);
-            this.txtLineThreeNote.TabIndex = 43;
-            // 
-            // txtLineFourNote
-            // 
-            this.txtLineFourNote.Location = new System.Drawing.Point(59, 526);
-            this.txtLineFourNote.MaxLength = 17;
-            this.txtLineFourNote.Name = "txtLineFourNote";
-            this.txtLineFourNote.Size = new System.Drawing.Size(146, 20);
-            this.txtLineFourNote.TabIndex = 44;
-            // 
-            // txtLineFiveNote
-            // 
-            this.txtLineFiveNote.Location = new System.Drawing.Point(331, 526);
-            this.txtLineFiveNote.MaxLength = 17;
-            this.txtLineFiveNote.Name = "txtLineFiveNote";
-            this.txtLineFiveNote.Size = new System.Drawing.Size(146, 20);
-            this.txtLineFiveNote.TabIndex = 45;
-            // 
-            // txtLineSixNote
-            // 
-            this.txtLineSixNote.Location = new System.Drawing.Point(604, 526);
-            this.txtLineSixNote.MaxLength = 17;
-            this.txtLineSixNote.Name = "txtLineSixNote";
-            this.txtLineSixNote.Size = new System.Drawing.Size(146, 20);
-            this.txtLineSixNote.TabIndex = 46;
-            // 
             // btnRandomiseColours
             // 
             this.btnRandomiseColours.BackColor = System.Drawing.SystemColors.Window;
@@ -338,7 +242,7 @@
             this.btnRandomiseColours.Location = new System.Drawing.Point(59, 627);
             this.btnRandomiseColours.Name = "btnRandomiseColours";
             this.btnRandomiseColours.Size = new System.Drawing.Size(146, 47);
-            this.btnRandomiseColours.TabIndex = 48;
+            this.btnRandomiseColours.TabIndex = 20;
             this.btnRandomiseColours.Text = "Randomise Colours";
             this.btnRandomiseColours.UseCompatibleTextRendering = true;
             this.btnRandomiseColours.UseVisualStyleBackColor = false;
@@ -354,10 +258,11 @@
             this.btnHelp.Location = new System.Drawing.Point(18, 640);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(20, 20);
-            this.btnHelp.TabIndex = 49;
+            this.btnHelp.TabIndex = 21;
             this.btnHelp.Text = "?";
             this.btnHelp.UseCompatibleTextRendering = true;
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // lblInfo
             // 
@@ -395,28 +300,154 @@
             this.btnMoreOptions.Location = new System.Drawing.Point(604, 627);
             this.btnMoreOptions.Name = "btnMoreOptions";
             this.btnMoreOptions.Size = new System.Drawing.Size(146, 47);
-            this.btnMoreOptions.TabIndex = 51;
+            this.btnMoreOptions.TabIndex = 18;
             this.btnMoreOptions.Text = "More options";
             this.btnMoreOptions.UseCompatibleTextRendering = true;
             this.btnMoreOptions.UseVisualStyleBackColor = false;
             this.btnMoreOptions.Click += new System.EventHandler(this.btnMoreOptions_Click_1);
+            // 
+            // txtLineOne
+            // 
+            this.txtLineOne.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineOne.GhostText = "Subject";
+            this.txtLineOne.Location = new System.Drawing.Point(86, 347);
+            this.txtLineOne.Name = "txtLineOne";
+            this.txtLineOne.Size = new System.Drawing.Size(92, 20);
+            this.txtLineOne.TabIndex = 51;
+            this.txtLineOne.Text = "Ghost Text Box";
+            // 
+            // txtLineOneNote
+            // 
+            this.txtLineOneNote.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineOneNote.GhostText = "Notes";
+            this.txtLineOneNote.Location = new System.Drawing.Point(59, 376);
+            this.txtLineOneNote.Name = "txtLineOneNote";
+            this.txtLineOneNote.Size = new System.Drawing.Size(146, 20);
+            this.txtLineOneNote.TabIndex = 52;
+            this.txtLineOneNote.Text = "Ghost Text Box";
+            // 
+            // txtLineTwo
+            // 
+            this.txtLineTwo.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineTwo.GhostText = "Subject";
+            this.txtLineTwo.Location = new System.Drawing.Point(359, 347);
+            this.txtLineTwo.Name = "txtLineTwo";
+            this.txtLineTwo.Size = new System.Drawing.Size(92, 20);
+            this.txtLineTwo.TabIndex = 53;
+            this.txtLineTwo.Text = "Ghost Text Box";
+            // 
+            // txtLineTwoNote
+            // 
+            this.txtLineTwoNote.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineTwoNote.GhostText = "Notes";
+            this.txtLineTwoNote.Location = new System.Drawing.Point(331, 376);
+            this.txtLineTwoNote.Name = "txtLineTwoNote";
+            this.txtLineTwoNote.Size = new System.Drawing.Size(146, 20);
+            this.txtLineTwoNote.TabIndex = 54;
+            this.txtLineTwoNote.Text = "Ghost Text Box";
+            // 
+            // txtLineThree
+            // 
+            this.txtLineThree.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineThree.GhostText = "Subject";
+            this.txtLineThree.Location = new System.Drawing.Point(632, 347);
+            this.txtLineThree.Name = "txtLineThree";
+            this.txtLineThree.Size = new System.Drawing.Size(92, 20);
+            this.txtLineThree.TabIndex = 55;
+            this.txtLineThree.Text = "Ghost Text Box";
+            // 
+            // txtLineThreeNote
+            // 
+            this.txtLineThreeNote.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineThreeNote.GhostText = "Notes";
+            this.txtLineThreeNote.Location = new System.Drawing.Point(604, 376);
+            this.txtLineThreeNote.Name = "txtLineThreeNote";
+            this.txtLineThreeNote.Size = new System.Drawing.Size(146, 20);
+            this.txtLineThreeNote.TabIndex = 56;
+            this.txtLineThreeNote.Text = "Ghost Text Box";
+            // 
+            // txtLineFour
+            // 
+            this.txtLineFour.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineFour.GhostText = "Subject";
+            this.txtLineFour.Location = new System.Drawing.Point(86, 497);
+            this.txtLineFour.Name = "txtLineFour";
+            this.txtLineFour.Size = new System.Drawing.Size(92, 20);
+            this.txtLineFour.TabIndex = 57;
+            this.txtLineFour.Text = "Ghost Text Box";
+            // 
+            // txtLineFourNote
+            // 
+            this.txtLineFourNote.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineFourNote.GhostText = "Notes";
+            this.txtLineFourNote.Location = new System.Drawing.Point(59, 526);
+            this.txtLineFourNote.Name = "txtLineFourNote";
+            this.txtLineFourNote.Size = new System.Drawing.Size(146, 20);
+            this.txtLineFourNote.TabIndex = 58;
+            this.txtLineFourNote.Text = "Ghost Text Box";
+            // 
+            // txtLineFive
+            // 
+            this.txtLineFive.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineFive.GhostText = "Subject";
+            this.txtLineFive.Location = new System.Drawing.Point(359, 497);
+            this.txtLineFive.Name = "txtLineFive";
+            this.txtLineFive.Size = new System.Drawing.Size(92, 20);
+            this.txtLineFive.TabIndex = 59;
+            this.txtLineFive.Text = "Ghost Text Box";
+            // 
+            // txtLineFiveNote
+            // 
+            this.txtLineFiveNote.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineFiveNote.GhostText = "Notes";
+            this.txtLineFiveNote.Location = new System.Drawing.Point(331, 526);
+            this.txtLineFiveNote.Name = "txtLineFiveNote";
+            this.txtLineFiveNote.Size = new System.Drawing.Size(146, 20);
+            this.txtLineFiveNote.TabIndex = 60;
+            this.txtLineFiveNote.Text = "Ghost Text Box";
+            // 
+            // txtLineSix
+            // 
+            this.txtLineSix.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineSix.GhostText = "Subject";
+            this.txtLineSix.Location = new System.Drawing.Point(632, 497);
+            this.txtLineSix.Name = "txtLineSix";
+            this.txtLineSix.Size = new System.Drawing.Size(92, 20);
+            this.txtLineSix.TabIndex = 61;
+            this.txtLineSix.Text = "Ghost Text Box";
+            // 
+            // txtLineSixNote
+            // 
+            this.txtLineSixNote.ForeColor = System.Drawing.Color.Gray;
+            this.txtLineSixNote.GhostText = "Notes";
+            this.txtLineSixNote.Location = new System.Drawing.Point(604, 526);
+            this.txtLineSixNote.Name = "txtLineSixNote";
+            this.txtLineSixNote.Size = new System.Drawing.Size(146, 20);
+            this.txtLineSixNote.TabIndex = 62;
+            this.txtLineSixNote.Text = "Ghost Text Box";
             // 
             // TimetableMapper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 700);
+            this.Controls.Add(this.txtLineSixNote);
+            this.Controls.Add(this.txtLineSix);
+            this.Controls.Add(this.txtLineFiveNote);
+            this.Controls.Add(this.txtLineFive);
+            this.Controls.Add(this.txtLineFourNote);
+            this.Controls.Add(this.txtLineFour);
+            this.Controls.Add(this.txtLineThreeNote);
+            this.Controls.Add(this.txtLineThree);
+            this.Controls.Add(this.txtLineTwoNote);
+            this.Controls.Add(this.txtLineTwo);
+            this.Controls.Add(this.txtLineOneNote);
+            this.Controls.Add(this.txtLineOne);
             this.Controls.Add(this.btnMoreOptions);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnRandomiseColours);
             this.Controls.Add(this.picTitle);
-            this.Controls.Add(this.txtLineSixNote);
-            this.Controls.Add(this.txtLineFiveNote);
-            this.Controls.Add(this.txtLineFourNote);
-            this.Controls.Add(this.txtLineThreeNote);
-            this.Controls.Add(this.txtLineTwoNote);
-            this.Controls.Add(this.txtLineOneNote);
             this.Controls.Add(this.lblLineFour);
             this.Controls.Add(this.lblLineSix);
             this.Controls.Add(this.lblLineFive);
@@ -430,12 +461,6 @@
             this.Controls.Add(this.btnLineTwo);
             this.Controls.Add(this.btnLineOne);
             this.Controls.Add(this.btnMap);
-            this.Controls.Add(this.txtLineSix);
-            this.Controls.Add(this.txtLineFive);
-            this.Controls.Add(this.txtLineFour);
-            this.Controls.Add(this.txtLineThree);
-            this.Controls.Add(this.txtLineTwo);
-            this.Controls.Add(this.txtLineOne);
             this.Controls.Add(this.picForm);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TimetableMapper";
@@ -450,13 +475,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picForm;
-        private System.Windows.Forms.TextBox txtLineOne;
         private System.Windows.Forms.ColorDialog clrdLineOne;
-        private System.Windows.Forms.TextBox txtLineTwo;
-        private System.Windows.Forms.TextBox txtLineThree;
-        private System.Windows.Forms.TextBox txtLineFour;
-        private System.Windows.Forms.TextBox txtLineFive;
-        private System.Windows.Forms.TextBox txtLineSix;
         private System.Windows.Forms.ColorDialog clrdLineTwo;
         private System.Windows.Forms.ColorDialog clrdLineThree;
         private System.Windows.Forms.ColorDialog clrdLineFour;
@@ -477,16 +496,22 @@
         private System.Windows.Forms.Label lblLineFive;
         private System.Windows.Forms.Label lblLineSix;
         private System.Windows.Forms.Label lblLineFour;
-        private System.Windows.Forms.TextBox txtLineOneNote;
-        private System.Windows.Forms.TextBox txtLineTwoNote;
-        private System.Windows.Forms.TextBox txtLineThreeNote;
-        private System.Windows.Forms.TextBox txtLineFourNote;
-        private System.Windows.Forms.TextBox txtLineFiveNote;
-        private System.Windows.Forms.TextBox txtLineSixNote;
         private System.Windows.Forms.Button btnRandomiseColours;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Button btnMoreOptions;
+        private GhostTextBox txtLineOne;
+        private GhostTextBox txtLineOneNote;
+        private GhostTextBox txtLineTwo;
+        private GhostTextBox txtLineTwoNote;
+        private GhostTextBox txtLineThree;
+        private GhostTextBox txtLineThreeNote;
+        private GhostTextBox txtLineFour;
+        private GhostTextBox txtLineFourNote;
+        private GhostTextBox txtLineFive;
+        private GhostTextBox txtLineFiveNote;
+        private GhostTextBox txtLineSix;
+        private GhostTextBox txtLineSixNote;
     }
 }
 

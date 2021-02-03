@@ -85,56 +85,12 @@ namespace Timetable_Mapper
             }
         }
 
-        private void btnMap_Click(object sender, EventArgs e)
-        {
-            //color dialog default is black
-            if(/*txtLineOne.Text == "" || txtLineTwo.Text == "" || txtLineThree.Text == "" || txtLineFour.Text == "" || txtLineFive.Text == "" || txtLineSix.Text == "" ||*/
-                clrdLineOne.Color == System.Drawing.Color.Black || clrdLineTwo.Color == System.Drawing.Color.Black || clrdLineThree.Color == System.Drawing.Color.Black || clrdLineFour.Color == System.Drawing.Color.Black || clrdLineFive.Color == System.Drawing.Color.Black || clrdLineSix.Color == System.Drawing.Color.Black)
-            {
-                MessageBox.Show("Please select a colour for each line and ensure that the colour black has not been selected to continue. You can avoid this by selecting the black and white mode under more options.", "Insufficient information", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            }
-            else
-            {
-                //proceed
-
-                //send text and colour values to Timetable form
-                SetValueForLineOneText = txtLineOne.Text;
-                SetValueForLineOneColor = clrdLineOne.Color;
-
-                SetValueForLineTwoText = txtLineTwo.Text;
-                SetValueForLineTwoColor = clrdLineTwo.Color;
-
-                SetValueForLineThreeText = txtLineThree.Text;
-                SetValueForLineThreeColor = clrdLineThree.Color;
-
-                SetValueForLineFourText = txtLineFour.Text;
-                SetValueForLineFourColor = clrdLineFour.Color;
-
-                SetValueForLineFiveText = txtLineFive.Text;
-                SetValueForLineFiveColor = clrdLineFive.Color;
-
-                SetValueForLineSixText = txtLineSix.Text;
-                SetValueForLineSixColor = clrdLineSix.Color;
-
-                SetValueForLineOneNote = txtLineOneNote.Text;
-                SetValueForLineTwoNote = txtLineTwoNote.Text;
-                SetValueForLineThreeNote = txtLineThreeNote.Text;
-                SetValueForLineFourNote = txtLineFourNote.Text;
-                SetValueForLineFiveNote = txtLineFiveNote.Text;
-                SetValueForLineSixNote = txtLineSixNote.Text;
-
-
-                Timetable timetable = new Timetable();
-                timetable.Show();
-            }
-        }
-
-        //custom font
+        //setting up custom font
+        PrivateFontCollection pfc;
         private void InitialiseCustomFonts()
         {
-
             //Create your private font collection object.
-            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc = new PrivateFontCollection();
 
             //Select your font from the resources.
             int fontLength = Properties.Resources.AndroidAssassin_grz1.Length;
@@ -330,22 +286,120 @@ namespace Timetable_Mapper
 
         }
 
-        public void SaveMoreOptions()
-        {
-            //update any options that may have changed
-
-            //black and white mode
-            if(MoreOptions.SetValueForBlackAndWhiteMode)
-            {
-                btnLineOne.Enabled = false;
-            }
-        }
-
         private void btnMoreOptions_Click_1(object sender, EventArgs e)
         {
             MoreOptions moreoptions = new MoreOptions();
             moreoptions.SetParentForm(this);
             moreoptions.Show();
+        }
+
+        public void SaveMoreOptions(MoreOptions form)
+        {
+            //update any options that may have changed
+
+            //black and white mode
+            if (MoreOptions.SetValueForBlackAndWhiteMode)
+            {
+                btnLineOne.Enabled = false;
+                btnLineTwo.Enabled = false;
+                btnLineThree.Enabled = false;
+                btnLineFour.Enabled = false;
+                btnLineFive.Enabled = false;
+                btnLineSix.Enabled = false;
+                btnRandomiseColours.Enabled = false;
+
+                btnLineOne.BackColor = System.Drawing.Color.White;
+                btnLineTwo.BackColor = System.Drawing.Color.White;
+                btnLineThree.BackColor = System.Drawing.Color.White;
+                btnLineFour.BackColor = System.Drawing.Color.White;
+                btnLineFive.BackColor = System.Drawing.Color.White;
+                btnLineSix.BackColor = System.Drawing.Color.White;
+            }
+            else if (!MoreOptions.SetValueForBlackAndWhiteMode)
+            {
+                btnLineOne.Enabled = true;
+                btnLineTwo.Enabled = true;
+                btnLineThree.Enabled = true;
+                btnLineFour.Enabled = true;
+                btnLineFive.Enabled = true;
+                btnLineSix.Enabled = true;
+                btnRandomiseColours.Enabled = true;
+            }
+
+            //colour presets
+            if(MoreOptions.SetValueForPresetHasBeenUsed)
+            {
+                btnLineOne.BackColor = form.LinePresetColours[0];
+                btnLineTwo.BackColor = form.LinePresetColours[1];
+                btnLineThree.BackColor = form.LinePresetColours[2];
+                btnLineFour.BackColor = form.LinePresetColours[3];
+                btnLineFive.BackColor = form.LinePresetColours[4];
+                btnLineSix.BackColor = form.LinePresetColours[5];
+
+                clrdLineOne.Color = form.LinePresetColours[0];
+                clrdLineTwo.Color = form.LinePresetColours[1];
+                clrdLineThree.Color = form.LinePresetColours[2];
+                clrdLineFour.Color = form.LinePresetColours[3];
+                clrdLineFive.Color = form.LinePresetColours[4];
+                clrdLineSix.Color = form.LinePresetColours[5];
+
+                MoreOptions.SetValueForPresetHasBeenUsed = false;
+            }
+
+        }
+
+        private void btnMap_Click(object sender, EventArgs e)
+        {
+            MapTimetable();
+        }
+
+        private void MapTimetable()
+        {
+            //cannot proceed if colours are not selected
+            if (clrdLineOne.Color == System.Drawing.Color.Black || clrdLineTwo.Color == System.Drawing.Color.Black || clrdLineThree.Color == System.Drawing.Color.Black || clrdLineFour.Color == System.Drawing.Color.Black || clrdLineFive.Color == System.Drawing.Color.Black || clrdLineSix.Color == System.Drawing.Color.Black)
+            {
+                MessageBox.Show("Please select a colour for each line and ensure that the colour black has not been selected to continue. You can avoid this by selecting the black and white mode under more options.", "Insufficient information", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                //proceed
+
+                //send text and colour values to Timetable form
+                SetValueForLineOneText = txtLineOne.GetText();
+                SetValueForLineOneColor = clrdLineOne.Color;
+
+                SetValueForLineTwoText = txtLineTwo.GetText();
+                SetValueForLineTwoColor = clrdLineTwo.Color;
+
+                SetValueForLineThreeText = txtLineThree.GetText();
+                SetValueForLineThreeColor = clrdLineThree.Color;
+
+                SetValueForLineFourText = txtLineFour.GetText();
+                SetValueForLineFourColor = clrdLineFour.Color;
+
+                SetValueForLineFiveText = txtLineFive.GetText();
+                SetValueForLineFiveColor = clrdLineFive.Color;
+
+                SetValueForLineSixText = txtLineSix.GetText();
+                SetValueForLineSixColor = clrdLineSix.Color;
+
+                SetValueForLineOneNote = txtLineOneNote.GetText();
+                SetValueForLineTwoNote = txtLineTwoNote.GetText();
+                SetValueForLineThreeNote = txtLineThreeNote.GetText();
+                SetValueForLineFourNote = txtLineFourNote.GetText();
+                SetValueForLineFiveNote = txtLineFiveNote.GetText();
+                SetValueForLineSixNote = txtLineSixNote.GetText();
+
+
+                Timetable timetable = new Timetable();
+                timetable.Show();
+            }
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help help = new Help ();
+            help.Show();
         }
     }
 }

@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>TimetableMapper_V2.ico</ApplicationIcon>
@@ -49,6 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GhostTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
     <Compile Include="MoreOptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MoreOptions.resx">
       <DependentUpon>MoreOptions.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +147,8 @@
     <None Include="Resources\FrostedDoughnuts.png" />
     <None Include="Resources\Palette5.png" />
     <None Include="Resources\Field.png" />
+    <None Include="Resources\ColourPalette_Disabled.png" />
+    <None Include="Resources\HelpForm.png" />
     <Content Include="TimetableMapper_V2.ico" />
     <None Include="Resources\TIMETABLEMAPPER_Title1.png" />
     <None Include="Resources\TimetableMapper_form2.png" />

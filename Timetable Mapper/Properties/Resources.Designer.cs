@@ -73,9 +73,9 @@ namespace Timetable_Mapper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Field {
+        internal static System.Drawing.Bitmap ColourPalette_Disabled {
             get {
-                object obj = ResourceManager.GetObject("Field", resourceCulture);
+                object obj = ResourceManager.GetObject("ColourPalette_Disabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,19 +83,9 @@ namespace Timetable_Mapper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FrostedDoughnuts {
+        internal static System.Drawing.Bitmap HelpForm {
             get {
-                object obj = ResourceManager.GetObject("FrostedDoughnuts", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Iceburg {
-            get {
-                object obj = ResourceManager.GetObject("Iceburg", resourceCulture);
+                object obj = ResourceManager.GetObject("HelpForm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +116,36 @@ namespace Timetable_Mapper.Properties {
         internal static System.Drawing.Bitmap NowWithFonts1 {
             get {
                 object obj = ResourceManager.GetObject("NowWithFonts1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Palette1 {
+            get {
+                object obj = ResourceManager.GetObject("Palette1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Palette2 {
+            get {
+                object obj = ResourceManager.GetObject("Palette2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Palette3 {
+            get {
+                object obj = ResourceManager.GetObject("Palette3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

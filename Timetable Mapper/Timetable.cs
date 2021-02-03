@@ -22,11 +22,47 @@ namespace Timetable_Mapper
         private void SetCell(Label label, String text, Color colour)
         {
             label.Text = text;
-            label.BackColor = colour;
+            label.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 13, MoreOptions.SetValueForUsedFontStyle.Style);
+            if (!MoreOptions.SetValueForBlackAndWhiteMode)
+            {
+                label.BackColor = colour;
+            }
+            else
+            {
+                label.BackColor = System.Drawing.Color.White;
+            }
         }
 
         private void CreateTimetable()
         {
+            //setting font for side labels
+            lblDay1.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 14, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblDay2.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 14, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblDay3.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 14, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblDay4.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 14, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblDay5.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 14, MoreOptions.SetValueForUsedFontStyle.Style);
+
+            lblPd1.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 17, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd2.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 17, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd3.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 17, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd4.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 17, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd5.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 17, MoreOptions.SetValueForUsedFontStyle.Style);
+
+            lblPd1Time.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd2Time.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd3Time.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd4Time.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblPd5Time.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+
+            lblForm.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 12, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblInterval.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 12, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblLunch.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 12, MoreOptions.SetValueForUsedFontStyle.Style);
+
+            lblFormTime.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblIntervalTime.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+            lblLunchTime.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 9, MoreOptions.SetValueForUsedFontStyle.Style);
+
+
             //line one
             SetCell(lblLineOne1, TimetableMapper.SetValueForLineOneText, TimetableMapper.SetValueForLineOneColor);
             SetCell(lblLineOne2, TimetableMapper.SetValueForLineOneText, TimetableMapper.SetValueForLineOneColor);
@@ -264,10 +300,11 @@ namespace Timetable_Mapper
                     Location = new Point(parentLabels[i].Location.X, parentLabels[i].Location.Y + (parentLabels[i].Height - 17) - 2),
                     TextAlign = System.Drawing.ContentAlignment.MiddleRight,
                     Text = text,
-                    ForeColor = System.Drawing.Color.Black,
+                    ForeColor = parentLabels[i].ForeColor,
                     BackColor = parentLabels[i].BackColor,
                     Parent = parentLabels[i],
                     Font = new Font(parentLabels[i].Font.Name, 10, FontStyle.Regular),
+                    AutoEllipsis = true
                 };
                 //note.Font. = 8;
                 this.Controls.Add(note);
