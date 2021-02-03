@@ -22,7 +22,7 @@ namespace Timetable_Mapper
         private void SetCell(Label label, String text, Color colour)
         {
             label.Text = text;
-            label.Font = new Font(MoreOptions.SetValueForUsedFont.Name, 13, MoreOptions.SetValueForUsedFontStyle.Style);
+            label.Font = new Font(MoreOptions.SetValueForUsedFont.Name, MoreOptions.SetValueForUsedFontSize, MoreOptions.SetValueForUsedFontStyle.Style);
             if (!MoreOptions.SetValueForBlackAndWhiteMode)
             {
                 label.BackColor = colour;
@@ -303,10 +303,10 @@ namespace Timetable_Mapper
                     ForeColor = parentLabels[i].ForeColor,
                     BackColor = parentLabels[i].BackColor,
                     Parent = parentLabels[i],
-                    Font = new Font(parentLabels[i].Font.Name, 10, FontStyle.Regular),
+                    Font = new Font(parentLabels[i].Font.Name, MoreOptions.SetValueForUsedFontSize - 3, MoreOptions.SetValueForUsedFontStyle.Style),
                     AutoEllipsis = true
                 };
-                //note.Font. = 8;
+
                 this.Controls.Add(note);
                 note.BringToFront();
                 i++;

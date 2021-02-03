@@ -7,7 +7,7 @@
     <ProjectGuid>{434539E3-EA4B-4139-BDA4-19C7E36A42FC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Timetable_Mapper</RootNamespace>
-    <AssemblyName>Timetable Mapper</AssemblyName>
+    <AssemblyName>Timetable Mapper V1.0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -149,6 +149,20 @@
     <None Include="Resources\Field.png" />
     <None Include="Resources\ColourPalette_Disabled.png" />
     <None Include="Resources\HelpForm.png" />
+    <None Include="Resources\TimetableMapper_form7.png" />
+    <None Include="Resources\TimetableMapper_form8.png" />
+    <None Include="Resources\TIMETABLEMAPPER_Title4.png" />
+    <None Include="Resources\TIMETABLEMAPPER_Title5.png" />
+    <None Include="Resources\TIMETABLEMAPPER_Title6.png" />
+    <None Include="Resources\TIMETABLEMAPPER_Title7.png" />
+    <None Include="Resources\TIMETABLEMAPPER_Title8.png" />
+    <None Include="Resources\TimetableMapper_form9.png" />
+    <None Include="Resources\TimeTableMapper_MoreOptions1.png" />
+    <None Include="Resources\TimeTableMapper_MoreOptions2.png" />
+    <None Include="Resources\TimeTableMapper_MoreOptions3.png" />
+    <None Include="Resources\HelpForm1.png" />
+    <None Include="Resources\HelpForm2.png" />
+    <None Include="Resources\ChangeLog.png" />
     <Content Include="TimetableMapper_V2.ico" />
     <None Include="Resources\TIMETABLEMAPPER_Title1.png" />
     <None Include="Resources\TimetableMapper_form2.png" />

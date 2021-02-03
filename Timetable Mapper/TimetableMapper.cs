@@ -20,13 +20,10 @@ namespace Timetable_Mapper
 
             picTitle.Parent = picForm;
             picTitle.Top = 0 - picTitle.Height;
-            lblInfo.Left = picForm.Width;
-            lblInfo.BackColor = ColorTranslator.FromHtml("#2e2a94");
-            lblInfo.ForeColor = ColorTranslator.FromHtml("#a71a2a");
 
-            btnMoreOptions.BackColor = ColorTranslator.FromHtml("#1c1c61");
-            btnMap.BackColor = ColorTranslator.FromHtml("#1c1c61");
-            btnRandomiseColours.BackColor = ColorTranslator.FromHtml("#1c1c61");
+            btnMoreOptions.BackColor = ColorTranslator.FromHtml("#6cafbb");
+            btnMap.BackColor = ColorTranslator.FromHtml("#6cafbb");
+            btnRandomiseColours.BackColor = ColorTranslator.FromHtml("#6cafbb");
 
             lblLineOne.Parent = picForm;
             lblLineTwo.Parent = picForm;
@@ -73,15 +70,7 @@ namespace Timetable_Mapper
             }
             else
             {
-                //slide-out information - grows and shrinks
-                if (lblInfo.Left > 520)
-                {
-                    lblInfo.Left -= 10;
-                }
-                else
-                {
-                    tmrTitle.Enabled = false;
-                }
+                tmrTitle.Enabled = false;
             }
         }
 
@@ -119,8 +108,7 @@ namespace Timetable_Mapper
             btnMap.Font = new Font(pfc.Families[0], 17);
             btnMoreOptions.Font = new Font(pfc.Families[0], 13);
             btnRandomiseColours.Font = new Font(pfc.Families[0], 13);
-            btnHelp.Font = new Font(pfc.Families[0], 8);
-            lblInfo.Font = new Font(pfc.Families[0], 20);
+            btnHelp.Font = new Font(pfc.Families[0], 7);
 
             lblLineOne.Font = new Font(pfc.Families[0], 25);
             lblLineTwo.Font = new Font(pfc.Families[0], 25);
@@ -358,42 +346,45 @@ namespace Timetable_Mapper
             //cannot proceed if colours are not selected
             if (clrdLineOne.Color == System.Drawing.Color.Black || clrdLineTwo.Color == System.Drawing.Color.Black || clrdLineThree.Color == System.Drawing.Color.Black || clrdLineFour.Color == System.Drawing.Color.Black || clrdLineFive.Color == System.Drawing.Color.Black || clrdLineSix.Color == System.Drawing.Color.Black)
             {
-                MessageBox.Show("Please select a colour for each line and ensure that the colour black has not been selected to continue. You can avoid this by selecting the black and white mode under more options.", "Insufficient information", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                if (!MoreOptions.SetValueForBlackAndWhiteMode)
+                {
+                    MessageBox.Show("Please select a colour for each line and ensure that the colour black has not been selected to continue. You can avoid this by selecting the black and white mode under more options.", "Insufficient information", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
             }
-            else
-            {
-                //proceed
 
-                //send text and colour values to Timetable form
-                SetValueForLineOneText = txtLineOne.GetText();
-                SetValueForLineOneColor = clrdLineOne.Color;
+            //proceed
 
-                SetValueForLineTwoText = txtLineTwo.GetText();
-                SetValueForLineTwoColor = clrdLineTwo.Color;
+            //send text and colour values to Timetable form
+            SetValueForLineOneText = txtLineOne.GetText();
+            SetValueForLineOneColor = clrdLineOne.Color;
 
-                SetValueForLineThreeText = txtLineThree.GetText();
-                SetValueForLineThreeColor = clrdLineThree.Color;
+            SetValueForLineTwoText = txtLineTwo.GetText();
+            SetValueForLineTwoColor = clrdLineTwo.Color;
 
-                SetValueForLineFourText = txtLineFour.GetText();
-                SetValueForLineFourColor = clrdLineFour.Color;
+            SetValueForLineThreeText = txtLineThree.GetText();
+            SetValueForLineThreeColor = clrdLineThree.Color;
 
-                SetValueForLineFiveText = txtLineFive.GetText();
-                SetValueForLineFiveColor = clrdLineFive.Color;
+            SetValueForLineFourText = txtLineFour.GetText();
+            SetValueForLineFourColor = clrdLineFour.Color;
 
-                SetValueForLineSixText = txtLineSix.GetText();
-                SetValueForLineSixColor = clrdLineSix.Color;
+            SetValueForLineFiveText = txtLineFive.GetText();
+            SetValueForLineFiveColor = clrdLineFive.Color;
 
-                SetValueForLineOneNote = txtLineOneNote.GetText();
-                SetValueForLineTwoNote = txtLineTwoNote.GetText();
-                SetValueForLineThreeNote = txtLineThreeNote.GetText();
-                SetValueForLineFourNote = txtLineFourNote.GetText();
-                SetValueForLineFiveNote = txtLineFiveNote.GetText();
-                SetValueForLineSixNote = txtLineSixNote.GetText();
+            SetValueForLineSixText = txtLineSix.GetText();
+            SetValueForLineSixColor = clrdLineSix.Color;
+
+            SetValueForLineOneNote = txtLineOneNote.GetText();
+            SetValueForLineTwoNote = txtLineTwoNote.GetText();
+            SetValueForLineThreeNote = txtLineThreeNote.GetText();
+            SetValueForLineFourNote = txtLineFourNote.GetText();
+            SetValueForLineFiveNote = txtLineFiveNote.GetText();
+            SetValueForLineSixNote = txtLineSixNote.GetText();
 
 
-                Timetable timetable = new Timetable();
-                timetable.Show();
-            }
+            Timetable timetable = new Timetable();
+            timetable.Show();
+            
         }
 
         private void btnHelp_Click(object sender, EventArgs e)

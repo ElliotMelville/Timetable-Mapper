@@ -34,15 +34,15 @@
             this.lblColourPresets = new System.Windows.Forms.Label();
             this.chkBlackAndWhite = new System.Windows.Forms.CheckBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblFontExample = new System.Windows.Forms.Label();
+            this.chkItalic = new System.Windows.Forms.CheckBox();
+            this.chkBold = new System.Windows.Forms.CheckBox();
             this.btnPresetFive = new System.Windows.Forms.Button();
             this.btnPresetFour = new System.Windows.Forms.Button();
             this.btnPresetThree = new System.Windows.Forms.Button();
             this.btnPresetTwo = new System.Windows.Forms.Button();
             this.btnPresetOne = new System.Windows.Forms.Button();
             this.picForm = new System.Windows.Forms.PictureBox();
-            this.lblFontExample = new System.Windows.Forms.Label();
-            this.chkItalic = new System.Windows.Forms.CheckBox();
-            this.chkBold = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,6 +113,46 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // lblFontExample
+            // 
+            this.lblFontExample.BackColor = System.Drawing.Color.Transparent;
+            this.lblFontExample.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFontExample.Location = new System.Drawing.Point(12, 166);
+            this.lblFontExample.Name = "lblFontExample";
+            this.lblFontExample.Size = new System.Drawing.Size(120, 17);
+            this.lblFontExample.TabIndex = 8;
+            this.lblFontExample.Text = "Example";
+            this.lblFontExample.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFontExample.UseCompatibleTextRendering = true;
+            // 
+            // chkItalic
+            // 
+            this.chkItalic.AutoSize = true;
+            this.chkItalic.BackColor = System.Drawing.Color.Transparent;
+            this.chkItalic.Location = new System.Drawing.Point(12, 210);
+            this.chkItalic.Name = "chkItalic";
+            this.chkItalic.Size = new System.Drawing.Size(47, 18);
+            this.chkItalic.TabIndex = 11;
+            this.chkItalic.Text = "Italic";
+            this.chkItalic.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.chkItalic.UseCompatibleTextRendering = true;
+            this.chkItalic.UseVisualStyleBackColor = false;
+            this.chkItalic.CheckedChanged += new System.EventHandler(this.chkItalic_CheckedChanged);
+            // 
+            // chkBold
+            // 
+            this.chkBold.AutoSize = true;
+            this.chkBold.BackColor = System.Drawing.Color.Transparent;
+            this.chkBold.Location = new System.Drawing.Point(12, 187);
+            this.chkBold.Name = "chkBold";
+            this.chkBold.Size = new System.Drawing.Size(46, 18);
+            this.chkBold.TabIndex = 12;
+            this.chkBold.Text = "Bold";
+            this.chkBold.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.chkBold.UseCompatibleTextRendering = true;
+            this.chkBold.UseVisualStyleBackColor = false;
+            this.chkBold.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
+            // 
             // btnPresetFive
             // 
             this.btnPresetFive.BackgroundImage = global::Timetable_Mapper.Properties.Resources.Palette5;
@@ -170,52 +210,12 @@
             // 
             // picForm
             // 
-            this.picForm.Image = global::Timetable_Mapper.Properties.Resources.TimeTableMapper_MoreOptions;
+            this.picForm.Image = global::Timetable_Mapper.Properties.Resources.TimeTableMapper_MoreOptions3;
             this.picForm.Location = new System.Drawing.Point(0, 0);
             this.picForm.Name = "picForm";
             this.picForm.Size = new System.Drawing.Size(300, 300);
             this.picForm.TabIndex = 0;
             this.picForm.TabStop = false;
-            // 
-            // lblFontExample
-            // 
-            this.lblFontExample.BackColor = System.Drawing.Color.Transparent;
-            this.lblFontExample.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFontExample.Location = new System.Drawing.Point(12, 166);
-            this.lblFontExample.Name = "lblFontExample";
-            this.lblFontExample.Size = new System.Drawing.Size(120, 17);
-            this.lblFontExample.TabIndex = 8;
-            this.lblFontExample.Text = "Example";
-            this.lblFontExample.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblFontExample.UseCompatibleTextRendering = true;
-            // 
-            // chkItalic
-            // 
-            this.chkItalic.AutoSize = true;
-            this.chkItalic.BackColor = System.Drawing.Color.Transparent;
-            this.chkItalic.Location = new System.Drawing.Point(12, 210);
-            this.chkItalic.Name = "chkItalic";
-            this.chkItalic.Size = new System.Drawing.Size(47, 18);
-            this.chkItalic.TabIndex = 11;
-            this.chkItalic.Text = "Italic";
-            this.chkItalic.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.chkItalic.UseCompatibleTextRendering = true;
-            this.chkItalic.UseVisualStyleBackColor = false;
-            this.chkItalic.CheckedChanged += new System.EventHandler(this.chkItalic_CheckedChanged);
-            // 
-            // chkBold
-            // 
-            this.chkBold.AutoSize = true;
-            this.chkBold.BackColor = System.Drawing.Color.Transparent;
-            this.chkBold.Location = new System.Drawing.Point(12, 187);
-            this.chkBold.Name = "chkBold";
-            this.chkBold.Size = new System.Drawing.Size(46, 18);
-            this.chkBold.TabIndex = 12;
-            this.chkBold.Text = "Bold";
-            this.chkBold.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.chkBold.UseCompatibleTextRendering = true;
-            this.chkBold.UseVisualStyleBackColor = false;
-            this.chkBold.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
             // 
             // MoreOptions
             // 
@@ -237,7 +237,7 @@
             this.Controls.Add(this.lstFonts);
             this.Controls.Add(this.picForm);
             this.Name = "MoreOptions";
-            this.Text = "Form1";
+            this.Text = "More Options";
             ((System.ComponentModel.ISupportInitialize)(this.picForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

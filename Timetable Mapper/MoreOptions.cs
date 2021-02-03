@@ -28,7 +28,7 @@ namespace Timetable_Mapper
             btnSave.Parent = picForm;
 
             lblFontExample.Font = new Font("Arial", 12);
-            btnSave.BackColor = ColorTranslator.FromHtml("#1c1c61");
+            btnSave.BackColor = ColorTranslator.FromHtml("#6cafbb");
         }
 
         public void SetParentForm(TimetableMapper form)
@@ -74,6 +74,7 @@ namespace Timetable_Mapper
 
         public static Font SetValueForUsedFont = new Font("Arial", 12);
         public static Font SetValueForUsedFontStyle = new Font("Arial", 12);
+        public static int SetValueForUsedFontSize = 13;
 
         public Color[] LinePresetColours;
 
@@ -241,14 +242,17 @@ namespace Timetable_Mapper
             else if (lstFonts.SelectedIndex == 2)
             {
                 lblFontExample.Font = new Font("Yu Gothic UI", 12, SetValueForUsedFontStyle.Style);
+                SetValueForUsedFontSize = 12;
             }
             else if (lstFonts.SelectedIndex == 3)
             {
                 lblFontExample.Font = new Font("Microsoft Himalaya", 12, SetValueForUsedFontStyle.Style);
+                SetValueForUsedFontSize = 15;
             }
             else if (lstFonts.SelectedIndex == 4)
             {
                 lblFontExample.Font = new Font("Segoe Script", 12, SetValueForUsedFontStyle.Style);
+                SetValueForUsedFontSize = 10;
             }
             else if (lstFonts.SelectedIndex == 5)
             {

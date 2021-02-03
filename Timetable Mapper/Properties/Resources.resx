@@ -121,17 +121,32 @@
   <data name="TimetableMapper_FormBLUEPRINT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_FormBLUEPRINT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TIMETABLEMAPPER_Title5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ColourPalette_Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ColourPalette_Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Palette1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Palette4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TimeTableMapper_MoreOptions2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimeTableMapper_MoreOptions2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TIMETABLEMAPPER_Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TIMETABLEMAPPER_Title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TimetableMapper_form8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimetableMapper_form8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TimetableMapper_form3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_form3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TimeTableMapper_MoreOptions3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimeTableMapper_MoreOptions3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpForm1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HelpForm1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TimetableMapper_form2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_form2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,26 +154,38 @@
   <data name="Palette5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Field.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TIMETABLEMAPPER_Title8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TimetableMapper_form9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimetableMapper_form9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HelpForm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TIMETABLEMAPPER_Title4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TimetableMapper_form5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_form5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TimetableMapper_form6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TimetableMapper_form6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TIMETABLEMAPPER_Title2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TIMETABLEMAPPER_Title2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NowWithFonts1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NowWithFonts1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AndroidAssassin_grz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AndroidAssassin-grz1.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="TimetableMapper_form4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_form4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TIMETABLEMAPPER_Title3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TIMETABLEMAPPER_Title3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TIMETABLEMAPPER_Title6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TimetableMapper_FormBLUEPRINT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_FormBLUEPRINT1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TIMETABLEMAPPER_Title3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,6 +202,9 @@
   <data name="TimeTableMapper_MoreOptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimeTableMapper_MoreOptions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TIMETABLEMAPPER_Title2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Timetable_BG V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Timetable_BG V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,22 +214,34 @@
   <data name="Timetable_BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Timetable_BG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TimetableMapper_form7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimetableMapper_form7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TimetableMapper_form" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TimetableMapper_form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TIMETABLEMAPPER_Title7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIMETABLEMAPPER_Title7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Palette3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FrostedDoughnuts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AndroidAssassin_grz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AndroidAssassin-grz1.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TimetableMapper_form6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimetableMapper_form6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpForm2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HelpForm2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TIMETABLEMAPPER_Title1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TIMETABLEMAPPER_Title1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TimeTableMapper_MoreOptions1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimeTableMapper_MoreOptions1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Palette2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Iceburg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HelpForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HelpForm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChangeLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangeLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

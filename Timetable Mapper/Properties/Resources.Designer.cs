@@ -73,6 +73,16 @@ namespace Timetable_Mapper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChangeLog {
+            get {
+                object obj = ResourceManager.GetObject("ChangeLog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ColourPalette_Disabled {
             get {
                 object obj = ResourceManager.GetObject("ColourPalette_Disabled", resourceCulture);
@@ -86,6 +96,26 @@ namespace Timetable_Mapper.Properties {
         internal static System.Drawing.Bitmap HelpForm {
             get {
                 object obj = ResourceManager.GetObject("HelpForm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HelpForm1 {
+            get {
+                object obj = ResourceManager.GetObject("HelpForm1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HelpForm2 {
+            get {
+                object obj = ResourceManager.GetObject("HelpForm2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +303,36 @@ namespace Timetable_Mapper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TimetableMapper_form7 {
+            get {
+                object obj = ResourceManager.GetObject("TimetableMapper_form7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TimetableMapper_form8 {
+            get {
+                object obj = ResourceManager.GetObject("TimetableMapper_form8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TimetableMapper_form9 {
+            get {
+                object obj = ResourceManager.GetObject("TimetableMapper_form9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TimetableMapper_FormBLUEPRINT {
             get {
                 object obj = ResourceManager.GetObject("TimetableMapper_FormBLUEPRINT", resourceCulture);
@@ -296,6 +356,36 @@ namespace Timetable_Mapper.Properties {
         internal static System.Drawing.Bitmap TimeTableMapper_MoreOptions {
             get {
                 object obj = ResourceManager.GetObject("TimeTableMapper_MoreOptions", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TimeTableMapper_MoreOptions1 {
+            get {
+                object obj = ResourceManager.GetObject("TimeTableMapper_MoreOptions1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TimeTableMapper_MoreOptions2 {
+            get {
+                object obj = ResourceManager.GetObject("TimeTableMapper_MoreOptions2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TimeTableMapper_MoreOptions3 {
+            get {
+                object obj = ResourceManager.GetObject("TimeTableMapper_MoreOptions3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +426,56 @@ namespace Timetable_Mapper.Properties {
         internal static System.Drawing.Bitmap TIMETABLEMAPPER_Title3 {
             get {
                 object obj = ResourceManager.GetObject("TIMETABLEMAPPER_Title3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIMETABLEMAPPER_Title4 {
+            get {
+                object obj = ResourceManager.GetObject("TIMETABLEMAPPER_Title4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIMETABLEMAPPER_Title5 {
+            get {
+                object obj = ResourceManager.GetObject("TIMETABLEMAPPER_Title5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIMETABLEMAPPER_Title6 {
+            get {
+                object obj = ResourceManager.GetObject("TIMETABLEMAPPER_Title6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIMETABLEMAPPER_Title7 {
+            get {
+                object obj = ResourceManager.GetObject("TIMETABLEMAPPER_Title7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TIMETABLEMAPPER_Title8 {
+            get {
+                object obj = ResourceManager.GetObject("TIMETABLEMAPPER_Title8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
